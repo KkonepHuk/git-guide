@@ -76,3 +76,17 @@ $ git push
 ```
 
 ----
+
+## **Типичный жизненный цикл файла в Git**
+
+```mermaid
+flowchart TD
+	A[untracked] --> B{$ git add};
+	B --> C{staged + tracked (в списке на коммит)};
+	C --> D{$ git commit};
+	D --> E{tracked};
+	E --> F{изменения};
+	F --> G{modified};
+	G --> H{$ git add};
+	H --> B
+```
