@@ -88,5 +88,5 @@ flowchart TD
 	E --> F{изменения};
 	F --> G{modified};
 	G --> H{$ git add};
-	H --> B
+	H --> C
 ```
